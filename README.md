@@ -4,12 +4,12 @@ Este proyecto presenta una arquitectura de microservicios para una plataforma ed
 
 ### **🛠️ Tecnologías Utilizadas**
 
-Lenguaje y Framework: Java 17, Spring Boot 3
-Gestión de Dependencias: Maven
-Spring Cloud:
-Eureka Server: Registro y descubrimiento de servicios
-Config Server: Gestión centralizada de configuraciones
-API Gateway: Enrutamiento dinámico y acceso unificado
+- Lenguaje y Framework: Java 17, Spring Boot 3
+- Gestión de Dependencias: Maven
+- Spring Cloud:
+- Eureka Server: Registro y descubrimiento de servicios
+- Config Server: Gestión centralizada de configuraciones
+- API Gateway: Enrutamiento dinámico y acceso unificado
 
 
 ### **Bases de Datos:**
