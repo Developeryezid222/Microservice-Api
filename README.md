@@ -1,8 +1,8 @@
 <h1 align="center">🎓 Microservicios Académicos - Spring Boot & Cloud</h1>
 
-Este proyecto presenta una arquitectura de microservicios para una plataforma educativa ficticia, desarrollada con Spring Boot y el ecosistema Spring Cloud. La solución incluye servicios independientes para la gestión de estudiantes y cursos, cada uno con su propia base de datos, integrados a través de una puerta de enlace centralizada.
+Este proyecto presenta una arquitectura de microservicios para una plataforma educativa basica, desarrollada con Spring Boot y el ecosistema Spring Cloud. La solución incluye servicios independientes para la gestión de estudiantes y cursos, cada uno con su propia base de datos, integrados a través de una puerta de enlace centralizada.
 
-## **🛠️ Tecnologías Utilizadas**
+### **🛠️ Tecnologías Utilizadas**
 
 Lenguaje y Framework: Java 17, Spring Boot 3
 Gestión de Dependencias: Maven
@@ -12,7 +12,7 @@ Config Server: Gestión centralizada de configuraciones
 API Gateway: Enrutamiento dinámico y acceso unificado
 
 
-## **Bases de Datos:**
+### **Bases de Datos:**
 MySQL (Servicio de Estudiantes)
 PostgreSQL (Servicio de Cursos)
 
@@ -21,7 +21,7 @@ Contenerización: Docker (opcional)
 Mensajería: Kafka para comunicación asíncrona (opcional)
 
 
-## **🧩 Arquitectura**
+### **🧩 Arquitectura**
 La arquitectura está diseñada para ser modular, escalable y tolerante a fallos, siguiendo los principios de microservicios. A continuación, se describe la estructura general:
  (La imagen se incluirá aquí una vez generada)
 
@@ -32,19 +32,28 @@ Student Service: Gestiona operaciones CRUD para estudiantes, respaldado por una 
 Course Service: Administra operaciones CRUD para cursos, utilizando una base de datos PostgreSQL.
 ____________________________________________________________________________________________________
 
-📦 Estructura del Proyecto
+### **📦 Estructura del Proyecto**
+
 microservices-academic/
-├── config-server/            # Gestión de configuraciones externas
-├── eureka-server/            # Registro y descubrimiento de servicios
-├── api-gateway/              # Puerta de enlace para enrutamiento
-├── student-service/          # Microservicio para estudiantes
-│   └── MySQL DB             # Base de datos para estudiantes
-├── course-service/           # Microservicio para cursos
-│   └── PostgreSQL DB        # Base de datos para cursos
-└── README.md                 # Documentación del proyecto
+
+├── config-server/             # Gestión de configuraciones externas
+
+├── eureka-server/             # Registro y descubrimiento de servicios
+
+├── api-gateway/               # Puerta de enlace para enrutamiento
+
+├── student-service/           # Microservicio para estudiantes
+
+│   └── MySQL DB              # Base de datos para estudiantes
+
+├── course-service/            # Microservicio para cursos
+
+│   └── PostgreSQL DB         # Base de datos para cursos
+
+└── README.md                  # Documentación del proyecto
 
 
-## **🚀 Ejecución del Proyecto**
+### **🚀 Ejecución del Proyecto**
 Sigue estos pasos para poner en marcha el proyecto:
 
 Clonar el repositorio:git clone <URL-del-repositorio>
@@ -57,7 +66,7 @@ Ejecutar Student Service y Course Service:Inicia ambos servicios, que se conecta
 (Opcional) Configurar Kafka:Si se desea habilitar la comunicación asíncrona, configura el clúster de Kafka y asegúrate de que los servicios estén suscritos a los tópicos correspondientes.
 _______________________________________________________________________________
 
-## **📚 Endpoints Principales**
+### **📚 Endpoints Principales**
 El API Gateway actúa como punto de entrada único y redirige las solicitudes a los microservicios correspondientes:
 
 
@@ -76,7 +85,7 @@ GET /student/all: Obtiene la lista de estudiantes.
 POST /course/create: Crea un nuevo curso.
 
 
-📝 Notas Adicionales
+### **📝 Notas Adicionales**
 
 Contenerización: Cada microservicio puede ejecutarse en contenedores Docker para facilitar el despliegue y la escalabilidad.
 Escalabilidad: La arquitectura permite añadir nuevos microservicios según las necesidades de la plataforma.
