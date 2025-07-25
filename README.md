@@ -1,7 +1,8 @@
-🎓 Microservicios Académicos - Spring Boot & Cloud
+<h1 align="center">🎓 Microservicios Académicos - Spring Boot & Cloud</h1>
+
 Este proyecto presenta una arquitectura de microservicios para una plataforma educativa ficticia, desarrollada con Spring Boot y el ecosistema Spring Cloud. La solución incluye servicios independientes para la gestión de estudiantes y cursos, cada uno con su propia base de datos, integrados a través de una puerta de enlace centralizada.
 
-🛠️ Tecnologías Utilizadas
+## **🛠️ Tecnologías Utilizadas**
 
 Lenguaje y Framework: Java 17, Spring Boot 3
 Gestión de Dependencias: Maven
@@ -11,7 +12,7 @@ Config Server: Gestión centralizada de configuraciones
 API Gateway: Enrutamiento dinámico y acceso unificado
 
 
-Bases de Datos:
+## **Bases de Datos:**
 MySQL (Servicio de Estudiantes)
 PostgreSQL (Servicio de Cursos)
 
@@ -20,16 +21,16 @@ Contenerización: Docker (opcional)
 Mensajería: Kafka para comunicación asíncrona (opcional)
 
 
-🧩 Arquitectura
+## **🧩 Arquitectura**
 La arquitectura está diseñada para ser modular, escalable y tolerante a fallos, siguiendo los principios de microservicios. A continuación, se describe la estructura general:
  (La imagen se incluirá aquí una vez generada)
 
-Config Server: Centraliza las configuraciones externas (application.yml) para todos los microservicios.
+- Config Server: Centraliza las configuraciones externas (application.yml) para todos los microservicios.
 Eureka Server: Facilita el registro y descubrimiento dinámico de los microservicios.
 API Gateway: Punto de entrada único que enruta las solicitudes a los servicios correspondientes.
 Student Service: Gestiona operaciones CRUD para estudiantes, respaldado por una base de datos MySQL.
 Course Service: Administra operaciones CRUD para cursos, utilizando una base de datos PostgreSQL.
-
+____________________________________________________________________________________________________
 
 📦 Estructura del Proyecto
 microservices-academic/
@@ -43,7 +44,7 @@ microservices-academic/
 └── README.md                 # Documentación del proyecto
 
 
-🚀 Ejecución del Proyecto
+## **🚀 Ejecución del Proyecto**
 Sigue estos pasos para poner en marcha el proyecto:
 
 Clonar el repositorio:git clone <URL-del-repositorio>
@@ -54,9 +55,9 @@ Iniciar Eureka Server:Levanta el servidor de descubrimiento para registrar los m
 Iniciar API Gateway:Verifica que la puerta de enlace pueda enrutar correctamente las solicitudes.
 Ejecutar Student Service y Course Service:Inicia ambos servicios, que se conectarán automáticamente a sus respectivas bases de datos (MySQL y PostgreSQL).
 (Opcional) Configurar Kafka:Si se desea habilitar la comunicación asíncrona, configura el clúster de Kafka y asegúrate de que los servicios estén suscritos a los tópicos correspondientes.
+_______________________________________________________________________________
 
-
-📚 Endpoints Principales
+## **📚 Endpoints Principales**
 El API Gateway actúa como punto de entrada único y redirige las solicitudes a los microservicios correspondientes:
 
 
