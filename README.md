@@ -13,12 +13,11 @@ Este proyecto presenta una arquitectura de microservicios para una plataforma ed
 
 
 ### **Bases de Datos:**
-MySQL (Servicio de Estudiantes)
-PostgreSQL (Servicio de Cursos)
+- MySQL (Servicio de Estudiantes)
+- PostgreSQL (Servicio de Cursos)
 
-
-Contenerización: Docker (opcional)
-Mensajería: Kafka para comunicación asíncrona (opcional)
+- Contenerización: Docker (opcional)
+- Mensajería: Kafka para comunicación asíncrona (opcional)
 
 
 ### **🧩 Arquitectura**
