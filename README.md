@@ -1,38 +1,84 @@
 🎓 Microservicios Académicos - Spring Boot & Cloud
-Este proyecto implementa una arquitectura de microservicios para una plataforma educativa ficticia, construida con Spring Boot y herramientas del ecosistema Spring Cloud. Contiene servicios separados para gestionar estudiantes y cursos, cada uno con su propia base de datos y expuestos mediante una puerta de enlace central.
-🛠️ Tecnologías utilizadas
-- Java 17, Spring Boot 3, Maven
-- Spring Cloud: Eureka Server, Config Server, API Gateway
-- Bases de datos:
-- MySQL para el servicio Student
-- PostgreSQL para el servicio Course
-- Docker para contenedores (opcional)
-- Kafka para comunicación asíncrona (opcional)
+Este proyecto presenta una arquitectura de microservicios para una plataforma educativa ficticia, desarrollada con Spring Boot y el ecosistema Spring Cloud. La solución incluye servicios independientes para la gestión de estudiantes y cursos, cada uno con su propia base de datos, integrados a través de una puerta de enlace centralizada.
+
+🛠️ Tecnologías Utilizadas
+
+Lenguaje y Framework: Java 17, Spring Boot 3
+Gestión de Dependencias: Maven
+Spring Cloud:
+Eureka Server: Registro y descubrimiento de servicios
+Config Server: Gestión centralizada de configuraciones
+API Gateway: Enrutamiento dinámico y acceso unificado
+
+
+Bases de Datos:
+MySQL (Servicio de Estudiantes)
+PostgreSQL (Servicio de Cursos)
+
+
+Contenerización: Docker (opcional)
+Mensajería: Kafka para comunicación asíncrona (opcional)
+
+
 🧩 Arquitectura
-Diagrama de Arquitectura ← (La imagen aparecerá aquí una vez generada)
-- config-server: Centraliza la configuración externa (application.yml)
-- eureka-server: Servicio de descubrimiento para registrar los microservicios
-- api-gateway: Puerta de entrada a los microservicios, maneja rutas dinámicas
-- student-service: CRUD para estudiantes + MySQL
-- course-service: CRUD para cursos + PostgreSQL
-📦 Estructura del proyecto
-├── config-server/
-├── eureka-server/
-├── api-gateway/
-├── student-service/
-│   └── MySQL DB
-├── course-service/
-│   └── PostgreSQL DB
-└── README.md
+La arquitectura está diseñada para ser modular, escalable y tolerante a fallos, siguiendo los principios de microservicios. A continuación, se describe la estructura general:
+ (La imagen se incluirá aquí una vez generada)
+
+Config Server: Centraliza las configuraciones externas (application.yml) para todos los microservicios.
+Eureka Server: Facilita el registro y descubrimiento dinámico de los microservicios.
+API Gateway: Punto de entrada único que enruta las solicitudes a los servicios correspondientes.
+Student Service: Gestiona operaciones CRUD para estudiantes, respaldado por una base de datos MySQL.
+Course Service: Administra operaciones CRUD para cursos, utilizando una base de datos PostgreSQL.
 
 
-🚀 Ejecución del proyecto
-- Clonar el repositorio.
-- Iniciar config-server y eureka-server.
-- Verificar que api-gateway puede enrutar correctamente.
-- Ejecutar student-service y course-service.
-- (Opcional) Configurar Kafka para eventos.
-📚 Endpoints principales
-- api-gateway/student/** → Redirige al microservicio de estudiantes
-- api-gateway/course/** → Redirige al microservicio de cursos
+📦 Estructura del Proyecto
+microservices-academic/
+├── config-server/            # Gestión de configuraciones externas
+├── eureka-server/            # Registro y descubrimiento de servicios
+├── api-gateway/              # Puerta de enlace para enrutamiento
+├── student-service/          # Microservicio para estudiantes
+│   └── MySQL DB             # Base de datos para estudiantes
+├── course-service/           # Microservicio para cursos
+│   └── PostgreSQL DB        # Base de datos para cursos
+└── README.md                 # Documentación del proyecto
+
+
+🚀 Ejecución del Proyecto
+Sigue estos pasos para poner en marcha el proyecto:
+
+Clonar el repositorio:git clone <URL-del-repositorio>
+
+
+Iniciar Config Server:Asegúrate de que el servidor de configuraciones esté activo para cargar las propiedades de los microservicios.
+Iniciar Eureka Server:Levanta el servidor de descubrimiento para registrar los microservicios.
+Iniciar API Gateway:Verifica que la puerta de enlace pueda enrutar correctamente las solicitudes.
+Ejecutar Student Service y Course Service:Inicia ambos servicios, que se conectarán automáticamente a sus respectivas bases de datos (MySQL y PostgreSQL).
+(Opcional) Configurar Kafka:Si se desea habilitar la comunicación asíncrona, configura el clúster de Kafka y asegúrate de que los servicios estén suscritos a los tópicos correspondientes.
+
+
+📚 Endpoints Principales
+El API Gateway actúa como punto de entrada único y redirige las solicitudes a los microservicios correspondientes:
+
+
+Endpoint
+Descripción
+
+/student/**
+Redirige al microservicio de estudiantes
+
+/course/**
+Redirige al microservicio de cursos
+
+Ejemplo de uso:
+
+GET /student/all: Obtiene la lista de estudiantes.
+POST /course/create: Crea un nuevo curso.
+
+
+📝 Notas Adicionales
+
+Contenerización: Cada microservicio puede ejecutarse en contenedores Docker para facilitar el despliegue y la escalabilidad.
+Escalabilidad: La arquitectura permite añadir nuevos microservicios según las necesidades de la plataforma.
+Comunicación Asíncrona: Kafka puede configurarse para manejar eventos como la inscripción de estudiantes en cursos.
+
   
