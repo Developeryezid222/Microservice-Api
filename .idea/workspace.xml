@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="804e7efd-6d63-4890-885c-682cb058c73c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-student/src/test/java/com/microservice/student/StudentServiceImpTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice.course/src/test/java/com/microservice/course/CourseServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-student/src/test/java/com/microservice/student/StudentControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-config/src/main/java/com/microservice/config/MicroserviceConfigApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-config/src/main/java/com/microservice/config/MicroserviceConfigApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-eureka/src/main/java/com/microservice/eureka/MicroserviceEurekaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-eureka/src/main/java/com/microservice/eureka/MicroserviceEurekaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-gateway/src/main/java/com/microservice/gateway/MicroserviceGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-gateway/src/main/java/com/microservice/gateway/MicroserviceGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-student/src/main/java/com/microservice/student/Controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-student/src/main/java/com/microservice/student/Controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice.course/src/main/java/com/microservice/course/Controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice.course/src/main/java/com/microservice/course/Controller/CourseController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +62,7 @@
     "JUnit.CourseServiceTest.testGetAllCourses.executor": "Run",
     "JUnit.CourseServiceTest.testGetCourseById_found.executor": "Run",
     "JUnit.CourseServiceTest.testGetCourseById_notFound.executor": "Run",
-    "JUnit.CourseServiceTest.testUpdateCourse_found.executor": "Run",
+    "JUnit.CourseServiceTest.testUpdateCourse_found.executor": "Debug",
     "JUnit.CourseServiceTest.testUpdateCourse_notFound.executor": "Run",
     "JUnit.StudentServiceImpTest.testFinAll.executor": "Run",
     "JUnit.StudentServiceImpTest.testFinByIdCourse.executor": "Debug",
@@ -78,7 +79,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.CourseServiceTest.testGetAllCourses">
+  <component name="RunManager" selected="JUnit.CourseServiceTest.testUpdateCourse_found">
     <configuration name="CourseServiceTest.testCreateCourse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="microservice.course" />
       <extension name="coverage">
@@ -161,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CourseServiceTest.testUpdateCourse_found" />
         <item itemvalue="JUnit.CourseServiceTest.testGetAllCourses" />
         <item itemvalue="JUnit.CourseServiceTest.testGetCourseById_found" />
         <item itemvalue="JUnit.CourseServiceTest.testGetCourseById_notFound" />
         <item itemvalue="JUnit.CourseServiceTest.testCreateCourse" />
-        <item itemvalue="JUnit.CourseServiceTest.testUpdateCourse_found" />
       </list>
     </recent_temporary>
   </component>
