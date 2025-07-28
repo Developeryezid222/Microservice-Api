@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="804e7efd-6d63-4890-885c-682cb058c73c" name="Changes" comment="" />
+    <list default="true" id="804e7efd-6d63-4890-885c-682cb058c73c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-student/src/test/java/com/microservice/student/StudentServiceImpTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice.course/src/test/java/com/microservice/course/CourseServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-student/src/test/java/com/microservice/student/StudentControllerTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +24,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Developeryezid222&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Developeryezid222/Microservice-Api.git&quot;,
+    &quot;accountId&quot;: &quot;c9bc14f1-af2c-404e-a348-5894602b97c2&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -26,23 +47,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MicroserviceConfigApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MicroserviceEurekaApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MicroserviceGatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MicroserviceStudentApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/MicroService/SprintMicroservice&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Application.executor": "Run",
+    "Application.MicroserviceConfigApplication.executor": "Run",
+    "Application.MicroserviceEurekaApplication.executor": "Run",
+    "Application.MicroserviceGatewayApplication.executor": "Run",
+    "Application.MicroserviceStudentApplication.executor": "Run",
+    "JUnit.CourseServiceTest.testCreateCourse.executor": "Run",
+    "JUnit.CourseServiceTest.testDeleteCourse.executor": "Run",
+    "JUnit.CourseServiceTest.testFindStudentsByCourseId.executor": "Run",
+    "JUnit.CourseServiceTest.testFindStudentsByCourseId_courseNotFound.executor": "Run",
+    "JUnit.CourseServiceTest.testGetAllCourses.executor": "Run",
+    "JUnit.CourseServiceTest.testGetCourseById_found.executor": "Run",
+    "JUnit.CourseServiceTest.testGetCourseById_notFound.executor": "Run",
+    "JUnit.CourseServiceTest.testUpdateCourse_found.executor": "Run",
+    "JUnit.CourseServiceTest.testUpdateCourse_notFound.executor": "Run",
+    "JUnit.StudentServiceImpTest.testFinAll.executor": "Run",
+    "JUnit.StudentServiceImpTest.testFinByIdCourse.executor": "Debug",
+    "JUnit.StudentServiceImpTest.testFinById_found.executor": "Run",
+    "JUnit.StudentServiceImpTest.testFinById_notFound.executor": "Run",
+    "JUnit.StudentServiceImpTest.testSave.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/MicroService/SprintMicroservice",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
-  <component name="RunManager" selected="Application.MicroserviceGatewayApplication">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.microservice.course.Application" />
+}]]></component>
+  <component name="RunManager" selected="JUnit.CourseServiceTest.testGetAllCourses">
+    <configuration name="CourseServiceTest.testCreateCourse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="microservice.course" />
       <extension name="coverage">
         <pattern>
@@ -50,69 +87,85 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.microservice.course" />
+      <option name="MAIN_CLASS_NAME" value="com.microservice.course.CourseServiceTest" />
+      <option name="METHOD_NAME" value="testCreateCourse" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MicroserviceConfigApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.microservice.config.MicroserviceConfigApplication" />
-      <module name="microservice-config" />
+    <configuration name="CourseServiceTest.testGetAllCourses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="microservice.course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.microservice.config.*" />
+          <option name="PATTERN" value="com.microservice.course.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.microservice.course" />
+      <option name="MAIN_CLASS_NAME" value="com.microservice.course.CourseServiceTest" />
+      <option name="METHOD_NAME" value="testGetAllCourses" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MicroserviceEurekaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.microservice.eureka.MicroserviceEurekaApplication" />
-      <module name="microservice-eureka" />
+    <configuration name="CourseServiceTest.testGetCourseById_found" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="microservice.course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.microservice.eureka.*" />
+          <option name="PATTERN" value="com.microservice.course.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.microservice.course" />
+      <option name="MAIN_CLASS_NAME" value="com.microservice.course.CourseServiceTest" />
+      <option name="METHOD_NAME" value="testGetCourseById_found" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MicroserviceGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.microservice.gateway.MicroserviceGatewayApplication" />
-      <module name="microservice-gateway" />
+    <configuration name="CourseServiceTest.testGetCourseById_notFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="microservice.course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.microservice.gateway.*" />
+          <option name="PATTERN" value="com.microservice.course.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.microservice.course" />
+      <option name="MAIN_CLASS_NAME" value="com.microservice.course.CourseServiceTest" />
+      <option name="METHOD_NAME" value="testGetCourseById_notFound" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MicroserviceStudentApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.microservice.student.MicroserviceStudentApplication" />
-      <module name="microservice-student" />
+    <configuration name="CourseServiceTest.testUpdateCourse_found" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="microservice.course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.microservice.student.*" />
+          <option name="PATTERN" value="com.microservice.course.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.microservice.course" />
+      <option name="MAIN_CLASS_NAME" value="com.microservice.course.CourseServiceTest" />
+      <option name="METHOD_NAME" value="testUpdateCourse_found" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MicroserviceGatewayApplication" />
-        <item itemvalue="Application.MicroserviceStudentApplication" />
-        <item itemvalue="Application.Application" />
-        <item itemvalue="Application.MicroserviceConfigApplication" />
-        <item itemvalue="Application.MicroserviceEurekaApplication" />
+        <item itemvalue="JUnit.CourseServiceTest.testGetAllCourses" />
+        <item itemvalue="JUnit.CourseServiceTest.testGetCourseById_found" />
+        <item itemvalue="JUnit.CourseServiceTest.testGetCourseById_notFound" />
+        <item itemvalue="JUnit.CourseServiceTest.testCreateCourse" />
+        <item itemvalue="JUnit.CourseServiceTest.testUpdateCourse_found" />
       </list>
     </recent_temporary>
   </component>
