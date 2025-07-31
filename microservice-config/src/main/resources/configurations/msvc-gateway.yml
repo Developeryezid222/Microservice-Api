@@ -13,11 +13,11 @@ spring:
         - id: students
           uri: 'http://localhost:8090'
           predicates:
-            - Path=/v1/student/**
+            - Path=/v1/students/**
         - id: courses
           uri: 'http://localhost:9090'
           predicates:
-            - Path=/v1/course/**
+            - Path=/v1/courses/**
 eureka:
   client:
     register-with-eureka: false

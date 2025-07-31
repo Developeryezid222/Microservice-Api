@@ -2,18 +2,20 @@ package com.microservice.course.Controller;
 
 
 
-import com.microservice.course.Controller.DTO.StudentDTO;
+
 import com.microservice.course.Entity.Course;
 import com.microservice.course.HTTP.Response.StudentCourseResponce;
 import com.microservice.course.Service.CourseService;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:52528/")
 @RestController
 @RequestMapping("/v1/courses")
 public class CourseController {
@@ -28,8 +30,8 @@ public class CourseController {
     }
 
     // Endpoint GET: retorna todos los cursos disponibles.
-    // URL: /v1/courses/all
-    @GetMapping("/all")
+    // URL: http://localhost:9090/v1/courses
+    @GetMapping
     public List<Course> getAllCourses() {
         return courseService.getAllCourses();
     }
@@ -46,6 +48,7 @@ public class CourseController {
     // URL: /v1/courses
     // Recibe un objeto Course en el cuerpo del request.
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public ResponseEntity<Course> createCourse(@RequestBody Course course) {
         return courseService.createCourse(course);
     }

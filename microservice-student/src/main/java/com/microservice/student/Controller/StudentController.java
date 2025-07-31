@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-
+@CrossOrigin(origins = "http://localhost:52528/")
 @RestController
 @RequestMapping("/v1/students")
 public class StudentController {
@@ -39,7 +39,8 @@ public class StudentController {
         iStudentService.save(student);
     }
 
-
+    //Enpoint Get: Busca un studiante por Id.
+    //URL: http://localhost:8090/v1/students/search/Id
     @GetMapping("search/{id}")
     public ResponseEntity<Student> finById(@PathVariable Long id) {
         return ResponseEntity.ok(iStudentService.finById(id));
