@@ -70,19 +70,21 @@ _______________________________________________________________________________
 El API Gateway actúa como punto de entrada único y redirige las solicitudes a los microservicios correspondientes:
 
 
-Endpoint
+# **RESTful API Endpoints**
 Descripción
 
-/student/**
+/v1/student/**
 Redirige al microservicio de estudiantes
 
-/course/**
+/v1/courses/**
 Redirige al microservicio de cursos
 
 Ejemplo de uso:
 
-GET /student/all: Obtiene la lista de estudiantes.
-POST /course/create: Crea un nuevo curso.
+- GET: v1/students: Obtiene la lista de estudiantes.
+- POST: v1/courses: Crea un nuevo curso.
+- PUT: /v1/courses/{id}
+- DELETE:
 
 
 ### **📝 Notas Adicionales**
