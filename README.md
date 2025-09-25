@@ -1,6 +1,8 @@
-<h1 align="center">🎓 Microservicios Académicos - Spring Boot & Cloud</h1>
+<h1 align="center">🎓 Microservicios Académicos: Arquitectura Distribuida con Spring Cloud</h1>
 
-Este proyecto presenta una arquitectura de microservicios para una plataforma educativa basica, desarrollada con Spring Boot y el ecosistema Spring Cloud. La solución incluye servicios independientes para la gestión de estudiantes y cursos, cada uno con su propia base de datos, integrados a través de una puerta de enlace centralizada.
+Este proyecto es una implementación funcional de una arquitectura de Microservicios distribuidos para una plataforma educativa básica. El objetivo principal es demostrar la creación de servicios autónomos y el uso avanzado del ecosistema Spring Cloud para garantizar la escalabilidad y la tolerancia a fallos.
+
+La solución sigue el patrón de Database per Service, separando la gestión de Estudiantes y Cursos en servicios independientes, accesibles a través de una API Gateway centralizada.
 
 ### **🛠️ Tecnologías Utilizadas**
 
@@ -93,4 +95,17 @@ Contenerización: Cada microservicio puede ejecutarse en contenedores Docker par
 Escalabilidad: La arquitectura permite añadir nuevos microservicios según las necesidades de la plataforma.
 Comunicación Asíncrona: Kafka puede configurarse para manejar eventos como la inscripción de estudiantes en cursos.
 
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" alt="java logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" height="40" alt="spring logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" alt="mysql logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" alt="postgresql logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" alt="docker logo"  />
+</div>
+
+###
   
